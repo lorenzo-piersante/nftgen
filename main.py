@@ -8,7 +8,6 @@ def generate_art():
     attachment_image = Image.open(fp='images_to_compose/attachment.png')
     resized_attachment_image = attachment_image.resize(size=(64, 64))
 
-    mask = resized_attachment_image.point()
     mask = resized_attachment_image.convert('L').point(lambda x: 0 if x > 128 else 255, '1')
 
     resized_base_image.paste(im=resized_attachment_image, box=(92, 104), mask=mask)
