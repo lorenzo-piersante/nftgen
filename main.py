@@ -1,20 +1,38 @@
+from random import randint
 from PIL import Image
+from utilities.generate_mask_for_image import generate_mask_for_image
+from config import *
 
 
 def generate_art():
-    base_image = Image.open(fp='images_to_compose/base.png')
-    resized_base_image = base_image.resize(size=(256, 256))
+    x = 0
+    while x < 4:
+        background_id = randint(0, 2)
+        background = Image.open(fp='assets/background/' + str(background_id) + '.png')
+        new_image = background.resize(size=BACKGROUND_SIZE)
 
-    attachment_image = Image.open(fp='images_to_compose/attachment.png')
-    resized_attachment_image = attachment_image.resize(size=(64, 64))
+        cactus_id = randint(0, 2)
+        cactus = Image.open(fp='assets/cactus/' + str(cactus_id) + '.png')
+        resized_cactus = cactus.resize(size=CACTUS_SIZE)
+        cactus_mask = generate_mask_for_image(resized_cactus)
+        new_image.paste(im=resized_cactus, box=CACTUS_RIGHT_CORNER, mask=cactus_mask)
 
-    mask = resized_attachment_image.convert('L').point(lambda x: 0 if x > 128 else 255, '1')
+        first_attachment_id = randint(0, 2)
+        first_attachment = Image.open(fp='assets/first_attachment/' + str(first_attachment_id) + '.png')
+        resized_first_attachment = first_attachment.resize(size=FIRST_ATTACHMENT_SIZE)
+        first_attachment_mask = generate_mask_for_image(resized_first_attachment)
+        new_image.paste(im=resized_first_attachment, box=FIRST_ATTACHMENT_RIGHT_CORNER, mask=first_attachment_mask)
 
-    resized_base_image.paste(im=resized_attachment_image, box=(92, 104), mask=mask)
-    resized_base_image.save(fp="generated_nft_set/test_image.png", format="PNG")
+        second_attachment_id = randint(0, 2)
+        second_attachment = Image.open(fp='assets/second_attachment/' + str(second_attachment_id) + '.png')
+        resized_second_attachment = second_attachment.resize(size=SECOND_ATTACHMENT_SIZE)
+        second_attachment_mask = generate_mask_for_image(resized_second_attachment)
+        new_image.paste(im=resized_second_attachment, box=SECOND_ATTACHMENT_RIGHT_CORNER, mask=second_attachment_mask)
 
-    print("Art generated!")
+        new_image.save(fp='generated_nft_set/CryptoCactus#' + str(x) + '.png', format="PNG")
+        x += 1
 
 
 if __name__ == "__main__":
     generate_art()
+    print("Art generated!")
