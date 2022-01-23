@@ -1,0 +1,31 @@
+{
+    "name": "CryptoCactus#4",
+    "description": "Crypto Cactus number #4",
+    "image": "ipfs://Qmb7skA43kEUQwVTaAepNmU9sk4rpHQn4feB4M5ibpdYZx/2650.png",
+    "dna": "5b882fd9b472c8696ca514e34a91b32e36ff48f4",
+    "edition": 1,
+    "date": 1642899300,
+    "attributes": [
+        {
+            "trait_type": "BACKGROUND",
+            "value": "marroncino"
+        },
+        {
+            "trait_type": "BODY",
+            "value": "basic"
+        },
+        {
+            "trait_type": "MOUTH",
+            "value": "angry"
+        },
+        {
+            "trait_type": "HAT",
+            "value": "red_hat"
+        },
+        {
+            "trait_type": "EYES",
+            "value": "triple"
+        }
+    ],
+    "compiler": "HashLips Art Engine"
+}
