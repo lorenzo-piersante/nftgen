@@ -4,7 +4,7 @@
     "image": "ipfs://Qmb7skA43kEUQwVTaAepNmU9sk4rpHQn4feB4M5ibpdYZx/2650.png",
     "dna": "5b882fd9b472c8696ca514e34a91b32e36ff48f4",
     "edition": 1,
-    "date": 1642899295,
+    "date": 1642941581,
     "attributes": [
         {
             "trait_type": "BACKGROUND",
@@ -16,7 +16,7 @@
         },
         {
             "trait_type": "MOUTH",
-            "value": "surprised"
+            "value": "angry"
         },
         {
             "trait_type": "HAT",
@@ -24,7 +24,7 @@
         },
         {
             "trait_type": "EYES",
-            "value": "triple"
+            "value": "geek"
         }
     ],
     "compiler": "HashLips Art Engine"
