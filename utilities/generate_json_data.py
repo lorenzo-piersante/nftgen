@@ -2,11 +2,7 @@ from math import floor
 from time import time
 from json import dumps
 
-background_values = ["orange_is_the_new_black", "green", "marroncino"]
-body_values = ["basic"]
-mouth_values = ["angry", "surprised"]
-hat_values = ["detective", "red_hat"]
-eyes_values = ["triple", "geek"]
+from config import background_values, body_values, mouth_values, hat_values, eyes_values
 
 
 def generate_json_data(new_image_id: int, combination: dict) -> None:

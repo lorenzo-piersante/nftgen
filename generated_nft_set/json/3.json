@@ -4,11 +4,11 @@
     "image": "ipfs://Qmb7skA43kEUQwVTaAepNmU9sk4rpHQn4feB4M5ibpdYZx/2650.png",
     "dna": "5b882fd9b472c8696ca514e34a91b32e36ff48f4",
     "edition": 1,
-    "date": 1642941584,
+    "date": 1642968446,
     "attributes": [
         {
             "trait_type": "BACKGROUND",
-            "value": "marroncino"
+            "value": "orange_is_the_new_black"
         },
         {
             "trait_type": "BODY",
@@ -16,15 +16,15 @@
         },
         {
             "trait_type": "MOUTH",
-            "value": "surprised"
+            "value": "angry"
         },
         {
             "trait_type": "HAT",
-            "value": "detective"
+            "value": "red_hat"
         },
         {
             "trait_type": "EYES",
-            "value": "geek"
+            "value": "triple"
         }
     ],
     "compiler": "HashLips Art Engine"

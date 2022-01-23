@@ -1,4 +1,6 @@
 from random import choices
+from config import background_population, background_weights, eyes_population, eyes_weights, hat_population, \
+    hat_weights, mouth_population, mouth_weights
 
 generated_combinations = []
 
@@ -6,11 +8,11 @@ generated_combinations = []
 def generate_new_combination() -> dict:
     while True:
         combination = {
-            'background_id': choices(population=(0, 1, 2), weights=(10, 45, 45), k=1)[0],
+            'background_id': choices(population=background_population, weights=background_weights, k=1)[0],
             'body_id': 0,
-            'eyes_id': choices(population=(0, 1), weights=(50, 50), k=1)[0],  # TODO: make chances configurable
-            'hat_id': choices(population=(0, 1), weights=(50, 50), k=1)[0],
-            'mouth_id': choices(population=(0, 1), weights=(50, 50), k=1)[0]
+            'eyes_id': choices(population=eyes_population, weights=eyes_weights, k=1)[0],
+            'hat_id': choices(population=hat_population, weights=hat_weights, k=1)[0],
+            'mouth_id': choices(population=mouth_population, weights=mouth_weights, k=1)[0]
         }
 
         if combination not in generated_combinations:
