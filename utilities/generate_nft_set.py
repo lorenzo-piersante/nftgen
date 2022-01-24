@@ -13,7 +13,7 @@ def generate_nft_set() -> None:
         if combination['background_id'] in animated_backgrounds:
             generate_nft_gif(new_image_id=new_image_id, combination=combination)
             generate_json_data(new_image_id=new_image_id, combination=combination)
-            print('CryptoCactus#' + str(new_image_id) + ' generated!')
+            print('[ANIMATED] CryptoCactus#' + str(new_image_id) + ' generated!')
             new_image_id += 1
             continue
 

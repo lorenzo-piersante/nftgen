@@ -27,5 +27,3 @@ def generate_nft_gif(new_image_id: int, combination: dict) -> None:
         duration=100,
         loop=0
     )
-
-    print("Wow, we are using a gif background!!")
