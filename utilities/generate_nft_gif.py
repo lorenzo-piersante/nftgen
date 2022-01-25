@@ -20,10 +20,10 @@ def generate_nft_gif(new_image_id: int, combination: dict) -> None:
         frames.append(new_gif)
 
     frames[0].save(
-        fp='generated_nft_set/images/' + str(new_image_id) + '.gif',
+        fp='generated_nft_set/animated_images/' + str(new_image_id) + '.gif',
         save_all=True,
         append_images=frames[1:],
         optimize=False,
-        duration=100,
+        duration=85,
         loop=0
     )
