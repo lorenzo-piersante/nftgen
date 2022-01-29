@@ -1,6 +1,6 @@
-#nftgen
+# nftgen
 
-###Introduction:
+### Introduction:
 
 nftgen is a simple project made to improve my python programming skills and help a friend with an NFT project.
 
@@ -10,7 +10,7 @@ A JSON file is created for every image generated this way.
 The JSON file can be used to bulk upload images on Opensea using **infotrex/bulk-upload-to-opensea** script 
 (witch I think is just a "branded" copy of **nftdevs/NFTs-Upload-to-OpenSea** , but I didn't test it yet)
 
-###Support
+### Support:
 
 if you want to support me for the script you can buy me a coffee:
 **0xF48F5eb11e454CA1b5543b67E324730d234deA4B**
@@ -18,19 +18,19 @@ if you want to support me for the script you can buy me a coffee:
 or you can give a big support to the whole team (and maybe become reach somehow) buying one of our CryptoCactus:
 **https://opensea.io/collection/cryptocactus**
 
-###Install language and dependencies
+### Install language and dependencies:
 
 1. Install python 3
 2. Install pipenv
 3. run `pipenv intall`
 
-###Add assets
+### Add assets:
 
 1. Put backgrounds in **_asset/background_** folder numbered from 0
 2. Put bodies in _**asset/body**_ folder numbered from 0 
 and so on (replacing examples)...
 
-###Configuration
+### Configuration:
 
 The script can be configured editing variables values in `config.py` file:
 - `number_of_nfts` is the number of images you want to generate (commonly 10000)
@@ -39,13 +39,13 @@ The script can be configured editing variables values in `config.py` file:
 - `background_values` (names of every component, used to create the bulk upload JSON)
 and so on ...
 
-###Run script
+### Run script:
 
 Run `pipenv run python main.py`
 
 All files will be generated under **_generated_nft_set_** directory
 
-###Notes:
+### Notes:
 
 1. Bodies, eyes, ... must be renders with exact same dimension of backgrounds (check examples)
 2. If you want to add a different number of items to your image, attach items with different names, use images with 
