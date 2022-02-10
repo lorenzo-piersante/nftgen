@@ -7,6 +7,7 @@ def generate_nft_image(new_image_id: int, combination: dict) -> None:
     _add_attachment(new_image, 'assets/eyes/', combination['eyes_id'])
     _add_attachment(new_image, 'assets/hat/', combination['hat_id'])
     _add_attachment(new_image, 'assets/mouth/', combination['mouth_id'])
+    _add_attachment(new_image, 'assets/accessory/', combination['accessory_id'])
     new_image.save(fp='generated_nft_set/images/' + str(new_image_id) + '.png', format="PNG")
 
 

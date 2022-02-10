@@ -2,7 +2,7 @@ from math import floor
 from time import time
 from json import dumps
 
-from config import background_values, body_values, mouth_values, hat_values, eyes_values
+from config import background_values, body_values, mouth_values, hat_values, eyes_values, accessory_values
 
 
 def generate_json_data(new_image_id: int, combination: dict) -> None:
@@ -19,6 +19,7 @@ def generate_json_data(new_image_id: int, combination: dict) -> None:
             {"trait_type": "MOUTH", "value": mouth_values[combination['mouth_id']]},
             {"trait_type": "HAT", "value": hat_values[combination['hat_id']]},
             {"trait_type": "EYES", "value": eyes_values[combination['eyes_id']]},
+            {"trait_type": "ACCESSORY", "value": accessory_values[combination['accessory_id']]},
         ],
         "compiler": "HashLips Art Engine"  # not sure if needed
     }
