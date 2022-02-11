@@ -1,0 +1,35 @@
+{
+    "name": "CryptoCactus#6",
+    "description": "Crypto Cactus number #6",
+    "image": "ipfs://Qmb7skA43kEUQwVTaAepNmU9sk4rpHQn4feB4M5ibpdYZx/2650.png",
+    "dna": "5b882fd9b472c8696ca514e34a91b32e36ff48f4",
+    "edition": 1,
+    "date": 1644618080,
+    "attributes": [
+        {
+            "trait_type": "BACKGROUND",
+            "value": "4"
+        },
+        {
+            "trait_type": "BODY",
+            "value": "basic"
+        },
+        {
+            "trait_type": "MOUTH",
+            "value": "1"
+        },
+        {
+            "trait_type": "HAT",
+            "value": "7"
+        },
+        {
+            "trait_type": "EYES",
+            "value": "1"
+        },
+        {
+            "trait_type": "ACCESSORY",
+            "value": "2"
+        }
+    ],
+    "compiler": "HashLips Art Engine"
+}

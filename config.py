@@ -1,4 +1,4 @@
-number_of_nfts = 1_000
+number_of_nfts = 10
 
 background_population = (0, 1, 2, 3, 4, 5, 6, 7)
 animated_backgrounds = ()
