@@ -15,8 +15,8 @@ The JSON file can be used to bulk upload images on Opensea using **infotrex/bulk
 if you want to support me for the script you can buy me a coffee:
 **0xF48F5eb11e454CA1b5543b67E324730d234deA4B**
 
-or you can give a big support to the whole team (and maybe become reach somehow) buying one of our CryptoCactus:
-**https://opensea.io/collection/cryptocactus**
+or you can give a big support to the whole team (and maybe become reach somehow) joining our Discord community:
+https://discord.gg/msG7eHYF
 
 ### Install language and dependencies:
 
