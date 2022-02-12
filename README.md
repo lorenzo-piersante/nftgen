@@ -11,11 +11,7 @@ The JSON file can be used to bulk upload images on Opensea using **infotrex/bulk
 
 ### Support:
 
-if you want to support me for the script you can buy me a coffee:
-**0xF48F5eb11e454CA1b5543b67E324730d234deA4B**
-
-or you can give a big support to the whole team (and maybe become reach somehow) joining our Discord community:
-https://discord.gg/msG7eHYF
+If you want to support out team join our Discord community: https://discord.gg/msG7eHYF
 
 ### Install language and dependencies:
 
@@ -37,6 +33,8 @@ The script can be configured editing variables values in `config.py` file:
 - `background_weights` (percentage chance of every image, total must be 100 for example (15, 35, 50))
 - `background_values` (names of every component, used to create the bulk upload JSON)
 and so on ...
+
+(GIF components are also supported, but I'm too lazy to explain how to configure it, try to figure it yourself if needed!)
 
 ### Run script:
 
