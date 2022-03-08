@@ -9,10 +9,6 @@ The aim of the script is to generate NFT art combining images with weighted chan
 A JSON file is created for every image generated this way.
 The JSON file can be used to bulk upload images on Opensea using **infotrex/bulk-upload-to-opensea** script
 
-### Support:
-
-If you want to support out team join our Discord community: https://discord.gg/msG7eHYF
-
 ### Install language and dependencies:
 
 1. Install python 3
